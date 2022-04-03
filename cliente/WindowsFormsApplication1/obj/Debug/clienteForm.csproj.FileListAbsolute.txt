@@ -134,7 +134,6 @@ C:\EETAC\2NB\SO\ProyectoSo\clienteV1\WindowsFormsApplication1\obj\Debug\clienteF
 C:\EETAC\2NB\SO\ProyectoSo\clienteV1\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.CoreCompileInputs.cache
 C:\EETAC\2NB\SO\ProyectoSo\clienteV1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\EETAC\2NB\SO\ProyectoSo\clienteV1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
-C:\EETAC\2NB\SO\ProyectoSo\clienteV1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Inicio.resources
 C:\EETAC\2NB\SO\ProyectoSo\clienteV1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Portada.resources
 C:\Users\marc\Downloads\ProyectoSo\clienteV1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\marc\Downloads\ProyectoSo\clienteV1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
@@ -163,3 +162,4 @@ C:\Users\marc\Documents\Universidad\Sistemas Operativos\Proyecto SO\clienteV1\Wi
 C:\Users\marc\Documents\Universidad\Sistemas Operativos\Proyecto SO\clienteV1\WindowsFormsApplication1\bin\Debug\normnfd.nlp
 C:\Users\marc\Documents\Universidad\Sistemas Operativos\Proyecto SO\clienteV1\WindowsFormsApplication1\bin\Debug\normnfkc.nlp
 C:\Users\marc\Documents\Universidad\Sistemas Operativos\Proyecto SO\clienteV1\WindowsFormsApplication1\bin\Debug\normnfkd.nlp
+C:\EETAC\2NB\SO\ProyectoSO\clienteV1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
