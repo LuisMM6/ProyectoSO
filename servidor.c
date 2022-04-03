@@ -6,8 +6,23 @@
 #include <netinet/in.h>
 #include <stdio.h>
 #include <mysql.h>
+#include <pthread.h>
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 
+
+typedef struct {
+	char nombre[20];
+	int socket;
+}Conectado;
+
+typedef struct {
+	Conectado conectados[100];
+	int num;
+}ListaConectados;
+
+ListaConectados lista;
 
 int NumeroJugadores ()
 {
@@ -60,7 +75,6 @@ int NumeroJugadores ()
 	exit(0);
 }
 
-
 int SignIn (char username[20], char contrasena[20])
 {
 	
@@ -78,6 +92,7 @@ int SignIn (char username[20], char contrasena[20])
 				mysql_errno(conn), mysql_error(conn));
 		exit (1);
 	}
+	
 	//inicializar la conexion
 	conn = mysql_real_connect (conn, "localhost","root", "mysql", "BBDDJuego",0, NULL, 0);
 	if (conn==NULL) {
@@ -104,7 +119,6 @@ int SignIn (char username[20], char contrasena[20])
 	strcat (consulta, contrasena); 
 	strcat (consulta, "');");
 	
-		
 	err = mysql_query(conn, consulta);
 	if (err!=0) 
 	{
@@ -116,11 +130,10 @@ int SignIn (char username[20], char contrasena[20])
 	
 	return 0;
 	
-// cerrar la conexion con el servidor MYSQL 
-mysql_close (conn);
-exit(0);
+	// cerrar la conexion con el servidor MYSQL 
+	mysql_close (conn);
+	exit(0);
 }	
-
 
 
 
@@ -146,7 +159,7 @@ int Login (char username[20], char contra[20])
 				mysql_errno(conn), mysql_error(conn));
 		exit (1);
 	}
-
+	
 	strcpy (consulta,"SELECT Jugadores.username from Jugadores WHERE Jugadores.username = '"); 
 	strcat (consulta, username);
 	strcat (consulta,"' AND Jugadores.contra = '");
@@ -162,14 +175,14 @@ int Login (char username[20], char contra[20])
 				mysql_errno(conn), mysql_error(conn));
 		exit (1);
 	}
-
+	
 	//recogemos el resultado de la consulta 
 	resultado = mysql_store_result (conn); 
 	row = mysql_fetch_row (resultado);
 	
 	if (row[0] != NULL)
 	{
-	
+		
 		return 0;
 	}
 	
@@ -184,13 +197,7 @@ int Login (char username[20], char contra[20])
 
 
 
-
-
-
-
-
-
-int PosicionJugador (char jugador[20],char fecha[20])
+int PosicionJugador (char jugador[20], char fecha[20])
 {
 	char consulta [1000];
 	MYSQL *conn;
@@ -230,18 +237,25 @@ int PosicionJugador (char jugador[20],char fecha[20])
 	resultado = mysql_store_result (conn); 
 	row = mysql_fetch_row (resultado);
 	
-	if (row[0] != NULL)
+	
+	if (row == NULL)
 	{
-	   int posicion = atoi(row[0]);
-	   return posicion;
+		return -1;
 	}
 	
 	else
-	return -1;	
-		
+	{
+		int posicion = atoi(row[0]);
+	    return posicion;
+	}
+	
 	mysql_close (conn);
 	exit(0);
 }
+
+
+
+
 
 int PartidasGanadas (char jugador[20])
 {
@@ -296,6 +310,8 @@ int PartidasGanadas (char jugador[20])
 	mysql_close (conn);
 	exit(0);
 }
+
+
 
 int GanadorPartidaX (int partida, char ganador[20]){
 	char consulta [1000];
@@ -356,6 +372,279 @@ int GanadorPartidaX (int partida, char ganador[20]){
 
 
 
+int AnadirConectado (ListaConectados *lista, char nombre[20], int socket){
+	//Añade nuevo Conectado.
+	if (lista->num == 100)
+		return -1;
+	else
+	{
+		pthread_mutex_lock(&mutex);
+		strcpy (lista->conectados[lista->num].nombre, nombre);
+		lista->conectados[lista->num].socket = socket;
+		lista->num++;
+		pthread_mutex_unlock(&mutex);
+		return 0;
+	}
+}
+
+int DameSocket (ListaConectados *lista, char nombre[20]){
+	int i=0;
+	int encontrado = 0;
+	while ((i < lista->num) && !encontrado)
+	{
+		if (strcmp(lista->conectados[i].nombre, nombre) ==0)
+			encontrado =1;
+		if (!encontrado)
+			i=i+1;
+	}
+	if (encontrado)
+		return lista->conectados[i].socket;
+	else 
+		return -1;
+}
+
+int DamePosicion (ListaConectados *lista, char nombre[20]){
+	int i=0;
+	int encontrado = 0;
+	while ((i < lista->num) && !encontrado)
+	{
+		if (strcmp(lista->conectados[i].nombre, nombre) ==0)
+			encontrado =1;
+		if (!encontrado)
+			i=i+1;
+	}
+	if (encontrado)
+		return i;
+	else 
+		return -1;
+}
+
+int Eliminar (ListaConectados *lista, char nombre[20]){
+	int pos = DamePosicion (lista, nombre);
+	if (pos == -1)
+		return -1;
+	else{
+		int i;
+		for (i=pos; i < lista->num-1; i++)
+		{
+			pthread_mutex_lock(&mutex);
+			lista->conectados[i] = lista->conectados[i+1];
+			strcpy (lista->conectados[i].nombre, lista->conectados[i+1].nombre);
+			lista->conectados[i].socket = lista->conectados[i+1].socket;
+			pthread_mutex_unlock(&mutex);
+		}
+		lista->num--;
+		return 0;
+	}
+}
+
+void DameConectados (ListaConectados *lista, char conectados[300]){
+	sprintf (conectados, "%d", lista->num);
+	int i;
+	for (i=0; i< lista->num; i++)
+	{
+		pthread_mutex_lock(&mutex);
+		sprintf (conectados, "%s/%s", conectados, lista->conectados[i].nombre);
+		pthread_mutex_unlock(&mutex);
+	}
+	
+}
+
+
+
+
+
+void *AtenderCliente (void *socket)
+{
+	int sock_conn;
+	int *s;
+	s= (int *) socket;
+	sock_conn= *s;
+	
+	//int socket_conn = * (int *) socket;
+	
+	char peticion[512];
+	char respuesta[512];
+	int ret;
+	int terminar =0;
+	// Entramos en un bucle para atender todas las peticiones de este cliente
+	//hasta que se desconecte
+	while (terminar ==0)
+	{
+		// Ahora recibimos la petici?n
+		ret=read(sock_conn,peticion, sizeof(peticion));
+		printf ("Recibido\n");
+		
+		// Tenemos que a?adirle la marca de fin de string 
+		// para que no escriba lo que hay despues en el buffer
+		peticion[ret]='\0';
+		
+		//Escribimos la peticion en la consola
+		printf ("La peticion es: %s\n",peticion);
+		char *p = strtok(peticion, "/");
+		int codigo =  atoi (p);
+		
+		char nombre[20];
+		
+		if ((codigo !=0) && (codigo !=5) && (codigo != 6))
+		{
+			p = strtok( NULL, "/");
+			strcpy (nombre, p);
+			printf ("Codigo: %d, Nombre: %s\n", codigo, nombre);
+			
+			
+		}
+		
+		if (codigo ==0)
+		{
+			
+			terminar=1;
+			
+			int eliminar;
+			eliminar =  Eliminar(&lista, nombre);
+			
+			if ( eliminar == 0)
+			{
+				
+				
+				printf(" Usuario eliminado correctamente ");
+				sprintf (respuesta, "Correcto"); 
+			}
+			
+			else
+			{
+				
+				printf(" Usuario no encontrado ");
+				sprintf (respuesta, "No encontrado");
+			}
+			
+		}  
+		
+		
+		else if (codigo ==1)
+		{
+			
+			char password[20];
+			int signin;
+			
+			p = strtok( NULL, "/");
+			strcpy (password, p);
+			
+			signin = SignIn(nombre,password);
+			
+
+			if (signin == 0)
+				sprintf(respuesta, "Correcto" );
+			
+			else
+				sprintf(respuesta, "Incorrecto" );
+			
+		}
+		
+		
+		else if (codigo ==2)
+		{
+			char password[20];
+			int login;
+			int anadirconectado;
+			
+			p = strtok( NULL, "/");
+			strcpy (password, p);
+			
+			login = Login (nombre,password);
+			
+			if (login == 0)
+			{
+				anadirconectado = AnadirConectado(&lista, nombre, sock_conn);
+				if(anadirconectado == 0)
+				{
+					sprintf (respuesta, "Correcto");
+				}
+				else
+				   sprintf (respuesta, "LLeno");
+				
+			}	
+			
+			
+			else
+				sprintf (respuesta, "Incorrecto");
+		}
+		
+		else if (codigo ==3)
+		{
+			char fecha[20];
+			int resultado;
+			
+			p = strtok( NULL, "/");
+			strcpy (fecha, p);
+			
+			resultado = PosicionJugador (nombre,fecha);
+			
+			
+			if (resultado == -1)
+				sprintf (respuesta, "%s no jugo ninguna partida el %s \n", nombre, fecha);
+			else
+				sprintf (respuesta, "La posicion del jugador es: %d \n", resultado);
+			
+		}	
+		
+		
+		
+		else if (codigo == 4)
+		{
+			int resultado;
+			
+			resultado = PartidasGanadas (nombre);
+			
+			if (resultado == 0)
+				sprintf (respuesta, " %s no ha ganada ninguna partida \n", nombre);
+			else
+				sprintf(respuesta, " El numero de partidas ganadas por %s es: %d \n", nombre, resultado);
+		}
+		
+		else if (codigo == 5)
+		{
+			char ganador[20];
+			int resultado;
+			int num_partida;
+			
+			p = strtok( NULL, "/");
+			num_partida = atoi(p); 
+			
+			
+			
+			resultado = GanadorPartidaX (num_partida,ganador);
+			
+			if (resultado == -1)
+				sprintf (respuesta,"No se han obtenido datos en la consulta\n");
+			else
+				
+				sprintf(respuesta, " El ganador de la partida %d es: %s \n", num_partida, ganador);
+		}
+		
+		else
+		{
+			char conectados[300];
+			
+			DameConectados(&lista, conectados);
+			
+			printf("%s\n", conectados);
+			
+			strcpy(respuesta, conectados);
+		}
+		
+		if (codigo !=0)	
+			// Enviamos la respuesta
+			write (sock_conn,respuesta, strlen(respuesta));
+		
+		
+	}
+	
+	write (sock_conn,respuesta, strlen(respuesta));
+	close(sock_conn);
+	
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -374,153 +663,30 @@ int main(int argc, char *argv[])
 	//htonl formatea el numero que recibe al formato necesario
 	serv_adr.sin_addr.s_addr = htonl(INADDR_ANY);
 	// escucharemos en el port 9050
-	serv_adr.sin_port = htons(9555);
+	serv_adr.sin_port = htons(9000);
 	if (bind(sock_listen, (struct sockaddr *) &serv_adr, sizeof(serv_adr)) < 0)
 		printf ("Error al bind");
 	//La cola de peticiones pendientes no podr? ser superior a 4
-	if (listen(sock_listen, 4) < 0)
+	if (listen(sock_listen, 3) < 0)
 		printf("Error en el Listen");
 	int i;
+	int sockets[100];
+	pthread_t thread;
+	i=0;
 	//bucle infinito
 	for(;;){
 		printf ("Escuchando\n");
 		
 		sock_conn = accept(sock_listen, NULL, NULL);
 		printf ("He recibido conexion\n");
+		
+		sockets[i] =sock_conn;
 		//sock_conn es el socket que usaremos para este cliente
-	
 		
-		//Bucle de atencion al cliente
+		// Crear thead y decirle lo que tiene que hacer
 		
-	    int terminar = 0;
-		while (terminar == 0)
-		{
-			// Ahora recibimos su peticion
-			ret=read(sock_conn,peticion, sizeof(peticion));
-			printf ("Recibida una peticion\n");
-			// Tenemos que a?adirle la marca de fin de string 
-			// para que no escriba lo que hay despues en el buffer
-			peticion[ret]='\0';
-			
-			//Escribimos la peticion en la consola
-			printf ("La peticion es: %s\n",peticion);
-			char *p = strtok(peticion, "/");
-			int codigo =  atoi (p);
-				
-				if (codigo ==0)
-				{
-					terminar=1;
-				    
-				}    
+		pthread_create (&thread, NULL, AtenderCliente,&sockets[i]);
+		i=i+1;
 		
-			    
-				
-				else if (codigo ==1)
-				{
-					char password[20];
-					char nombre[20];
-					int signin;
-					
-					p = strtok( NULL, "/");
-					strcpy (nombre, p);
-					
-					p = strtok( NULL, "/");
-					strcpy (password, p);
-					
-					signin = SignIn (nombre,password);
-					if (signin ==0)
-						sprintf (respuesta, "Correcto");
-					else
-						sprintf (respuesta, "Incorrecto");
-				}
-				
-				
-				else if (codigo ==2)
-				{
-					char password[20];
-					char nombre[20];
-					int login;
-					
-					p = strtok( NULL, "/");
-					strcpy (nombre, p);
-					
-					p = strtok( NULL, "/");
-					strcpy (password, p);
-					
-					login = Login (nombre,password);
-					
-					if (login ==0)
-						sprintf (respuesta, "Correcto");
-					else
-						sprintf (respuesta, "Incorrecto");
-				}
-				
-				else if (codigo ==3)
-				{
-					char fecha[20];
-					char nombre[20];
-					int resultado;
-					
-					p = strtok( NULL, "/");
-					strcpy (nombre, p);
-					
-					p = strtok( NULL, "/");
-					strcpy (fecha, p);
-					
-					resultado = PosicionJugador (nombre,fecha);
-
-					
-					if (resultado == -1)
-						sprintf (respuesta, "No se han obtenido datos en la consulta");
-					else
-						sprintf (respuesta, "La posici??n del jugador es: %d \n", resultado);
-				}	
-				
-				
-				
-				else if (codigo == 4)
-				{
-					char nombre[20];
-					int resultado;
-					
-					p = strtok( NULL, "/");
-					strcpy (nombre, p);
-					
-					resultado = PartidasGanadas (nombre);
-					
-					if (resultado == 0)
-						sprintf (respuesta, " %s no ha ganada ninguna partida \n", nombre);
-					else
-						sprintf(respuesta, " El numero de partidas ganadas por %s es: %d \n", nombre, resultado);
-				}
-				
-				else
-				{
-					char ganador[20];
-					int resultado;
-					int num_partida;
-					
-					p = strtok( NULL, "/");
-					num_partida = atoi(p); 
-				
-					
-					
-					resultado = GanadorPartidaX (num_partida,ganador);
-					
-					if (resultado == -1)
-						sprintf (respuesta,"No se han obtenido datos en la consulta\n");
-					else
-						
-						sprintf(respuesta, " El ganador de la partida %d es: %s \n", num_partida, ganador);
-				}
-		
-				if (codigo !=0)	
-					// Enviamos la respuesta
-					write (sock_conn,respuesta, strlen(respuesta));
-				
-
-		}
-		// Se acabo el servicio para este cliente*/
-		close(sock_conn);
 	}
 }
