@@ -8,3 +8,7 @@ URL: https://youtu.be/NW8x_BjLg1o
 
 
 Versión 2 generada por Marc
+Versión 2 verificada por Luis
+Versión 2 comunicada por Daniel
+URL (v2): https://www.youtube.com/watch?v=xZtWBkKueBE
+URL (interfaz): https://youtu.be/Ixy-tOIVLTg
