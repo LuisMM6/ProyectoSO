@@ -14,6 +14,6 @@ Versión 2 comunicada por Daniel URL (v2): https://www.youtube.com/watch?v=xZtWB
 
 
 Versión 3 generada por Daniel
-Versión 3 verificada por Marc
-Versión 3 comunicada por Luis
+Versión 3 verificada por Luis
+Versión 3 comunicada por Marc
 URL: 
