@@ -163,3 +163,58 @@ C:\Users\marc\Documents\Universidad\Sistemas Operativos\Proyecto SO\clienteV1\Wi
 C:\Users\marc\Documents\Universidad\Sistemas Operativos\Proyecto SO\clienteV1\WindowsFormsApplication1\bin\Debug\normnfkc.nlp
 C:\Users\marc\Documents\Universidad\Sistemas Operativos\Proyecto SO\clienteV1\WindowsFormsApplication1\bin\Debug\normnfkd.nlp
 C:\EETAC\2NB\SO\ProyectoSO\clienteV1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\luism\Desktop\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\luism\Desktop\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\luism\Desktop\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\luism\Desktop\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.AssemblyReference.cache
+C:\Users\luism\Desktop\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Portada.resources
+C:\Users\luism\Desktop\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\luism\Desktop\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.GenerateResource.cache
+C:\Users\luism\Desktop\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.CoreCompileInputs.cache
+C:\Users\luism\Desktop\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\luism\Desktop\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\mscorlib.dll
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\es\mscorlib.resources.dll
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\normidna.nlp
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\normnfc.nlp
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\normnfd.nlp
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\normnfkc.nlp
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\normnfkd.nlp
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csprojResolveAssemblyReference.cache
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Portada.resources
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\marc\Downloads\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.GenerateResource.Cache
+C:\EETAC\2NB\SO\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\EETAC\2NB\SO\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\EETAC\2NB\SO\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\EETAC\2NB\SO\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csprojAssemblyReference.cache
+C:\EETAC\2NB\SO\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Portada.resources
+C:\EETAC\2NB\SO\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\EETAC\2NB\SO\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.GenerateResource.cache
+C:\EETAC\2NB\SO\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.CoreCompileInputs.cache
+C:\EETAC\2NB\SO\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\EETAC\2NB\SO\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\marc\Downloads\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\marc\Downloads\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\marc\Downloads\ProyectoV3\ProyectoSo\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\mscorlib.dll
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\es\mscorlib.resources.dll
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\normidna.nlp
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\normnfc.nlp
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\normnfd.nlp
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\normnfkc.nlp
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\bin\Debug\normnfkd.nlp
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csprojResolveAssemblyReference.cache
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Portada.resources
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.GenerateResource.Cache

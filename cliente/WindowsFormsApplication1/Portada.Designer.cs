@@ -47,7 +47,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.NºPartida = new System.Windows.Forms.TextBox();
             this.Tablaconectados = new System.Windows.Forms.DataGridView();
-            this.Conectados = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Tablaconectados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -243,23 +242,11 @@
             this.Tablaconectados.Size = new System.Drawing.Size(372, 446);
             this.Tablaconectados.TabIndex = 21;
             // 
-            // Conectados
-            // 
-            this.Conectados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Conectados.Location = new System.Drawing.Point(360, 467);
-            this.Conectados.Name = "Conectados";
-            this.Conectados.Size = new System.Drawing.Size(316, 77);
-            this.Conectados.TabIndex = 22;
-            this.Conectados.Text = "Lista Jugadores Conectados";
-            this.Conectados.UseVisualStyleBackColor = true;
-            this.Conectados.Click += new System.EventHandler(this.Conectados_Click);
-            // 
             // Portada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1213, 646);
-            this.Controls.Add(this.Conectados);
             this.Controls.Add(this.Tablaconectados);
             this.Controls.Add(this.NºPartida);
             this.Controls.Add(this.label7);
@@ -310,6 +297,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox NºPartida;
         private System.Windows.Forms.DataGridView Tablaconectados;
-        private System.Windows.Forms.Button Conectados;
     }
 }
