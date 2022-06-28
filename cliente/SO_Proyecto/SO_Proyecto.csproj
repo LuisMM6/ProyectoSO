@@ -92,5 +92,40 @@
   <ItemGroup>
     <None Include="Resources\MonopolyBueno.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TiroDado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TiroDado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Dado1.png" />
+    <Content Include="Properties\Dado2.png" />
+    <Content Include="Properties\Dado3.png" />
+    <Content Include="Properties\Dado4.png" />
+    <Content Include="Properties\Dado5.png" />
+    <Content Include="Properties\Dado6.png" />
+    <None Include="Resources\podio.png" />
+    <None Include="Resources\casa1.png" />
+    <None Include="Resources\mostrarcontra.png" />
+    <None Include="Resources\0db41409c10b46ae99b710427a1d7913.png" />
+    <None Include="Resources\logo-Euro.png" />
+    <None Include="Resources\pobre.png" />
+    <None Include="Resources\dinerosuelo.png" />
+    <None Include="Resources\eetac.png" />
+    <None Include="Resources\pipa.png" />
+    <None Include="Resources\morad.png" />
+    <None Include="Resources\casa.png" />
+    <None Include="Resources\florida.png" />
+    <None Include="Resources\tirardado.png" />
+    <None Include="Resources\TirarDado2.png" />
+    <None Include="Resources\flecha.png" />
+    <None Include="Resources\ficha41.png" />
+    <None Include="Resources\ficha31.png" />
+    <None Include="Resources\ficha25.png" />
+    <None Include="Resources\ficha15.png" />
+    <None Include="Resources\ficha_1.png" />
+    <None Include="Resources\ficha.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

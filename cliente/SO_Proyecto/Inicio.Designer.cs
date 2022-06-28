@@ -29,147 +29,162 @@ namespace SO_Proyecto
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.log_in = new System.Windows.Forms.Button();
             this.sign_in = new System.Windows.Forms.Button();
-            this.posicion_jugador = new System.Windows.Forms.Button();
-            this.num_partidas = new System.Windows.Forms.Button();
-            this.Jugadores_ganados = new System.Windows.Forms.Button();
+            this.podio = new System.Windows.Forms.Button();
+            this.partidas_ganadas = new System.Windows.Forms.Button();
+            this.partidas_jugados = new System.Windows.Forms.Button();
             this.invitacion = new System.Windows.Forms.Button();
             this.desconectar = new System.Windows.Forms.Button();
-            this.boton_chat = new System.Windows.Forms.Button();
             this.Tablaconectados = new System.Windows.Forms.DataGridView();
-            this.Chat = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.usuario = new System.Windows.Forms.TextBox();
-            this.fecha = new System.Windows.Forms.TextBox();
-            this.chatear = new System.Windows.Forms.TextBox();
-            this.jugador2 = new System.Windows.Forms.TextBox();
-            this.jugador3 = new System.Windows.Forms.TextBox();
-            this.jugador4 = new System.Windows.Forms.TextBox();
+            this.conectado = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.eliminarusuario = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.Tablaconectados)).BeginInit();
             this.SuspendLayout();
             // 
             // log_in
             // 
+            this.log_in.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.log_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.log_in.Location = new System.Drawing.Point(303, 56);
+            this.log_in.Location = new System.Drawing.Point(290, 46);
+            this.log_in.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.log_in.Name = "log_in";
-            this.log_in.Size = new System.Drawing.Size(97, 57);
+            this.log_in.Size = new System.Drawing.Size(85, 46);
             this.log_in.TabIndex = 0;
             this.log_in.Text = "Log in";
-            this.log_in.UseVisualStyleBackColor = true;
+            this.log_in.UseVisualStyleBackColor = false;
             this.log_in.Click += new System.EventHandler(this.log_in_Click);
             // 
             // sign_in
             // 
+            this.sign_in.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.sign_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sign_in.Location = new System.Drawing.Point(303, 144);
+            this.sign_in.Location = new System.Drawing.Point(290, 114);
+            this.sign_in.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sign_in.Name = "sign_in";
-            this.sign_in.Size = new System.Drawing.Size(97, 57);
+            this.sign_in.Size = new System.Drawing.Size(85, 46);
             this.sign_in.TabIndex = 1;
             this.sign_in.Text = "Sign in";
-            this.sign_in.UseVisualStyleBackColor = true;
+            this.sign_in.UseVisualStyleBackColor = false;
             this.sign_in.Click += new System.EventHandler(this.sign_in_Click);
             // 
-            // posicion_jugador
+            // podio
             // 
-            this.posicion_jugador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.posicion_jugador.Location = new System.Drawing.Point(254, 372);
-            this.posicion_jugador.Name = "posicion_jugador";
-            this.posicion_jugador.Size = new System.Drawing.Size(203, 68);
-            this.posicion_jugador.TabIndex = 2;
-            this.posicion_jugador.Text = "Posicion jugador en una partida concreta";
-            this.posicion_jugador.UseVisualStyleBackColor = true;
-            this.posicion_jugador.Click += new System.EventHandler(this.posicion_jugador_Click);
+            this.podio.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.podio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.podio.Location = new System.Drawing.Point(276, 390);
+            this.podio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.podio.Name = "podio";
+            this.podio.Size = new System.Drawing.Size(231, 54);
+            this.podio.TabIndex = 2;
+            this.podio.Text = "Podio";
+            this.podio.UseVisualStyleBackColor = false;
+            this.podio.Click += new System.EventHandler(this.podio_Click);
             // 
-            // num_partidas
+            // partidas_ganadas
             // 
-            this.num_partidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_partidas.Location = new System.Drawing.Point(254, 514);
-            this.num_partidas.Name = "num_partidas";
-            this.num_partidas.Size = new System.Drawing.Size(203, 68);
-            this.num_partidas.TabIndex = 3;
-            this.num_partidas.Text = "Partidas ganadas por un jugador";
-            this.num_partidas.UseVisualStyleBackColor = true;
-            this.num_partidas.Click += new System.EventHandler(this.num_partidas_Click);
+            this.partidas_ganadas.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.partidas_ganadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.partidas_ganadas.Location = new System.Drawing.Point(276, 450);
+            this.partidas_ganadas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.partidas_ganadas.Name = "partidas_ganadas";
+            this.partidas_ganadas.Size = new System.Drawing.Size(231, 54);
+            this.partidas_ganadas.TabIndex = 3;
+            this.partidas_ganadas.Text = "Partidas ganadas por un jugador";
+            this.partidas_ganadas.UseVisualStyleBackColor = false;
+            this.partidas_ganadas.Click += new System.EventHandler(this.partidas_ganadas_Click);
             // 
-            // Jugadores_ganados
+            // partidas_jugados
             // 
-            this.Jugadores_ganados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Jugadores_ganados.Location = new System.Drawing.Point(20, 506);
-            this.Jugadores_ganados.Name = "Jugadores_ganados";
-            this.Jugadores_ganados.Size = new System.Drawing.Size(203, 72);
-            this.Jugadores_ganados.TabIndex = 4;
-            this.Jugadores_ganados.Text = "Jugadores ganados por jugador";
-            this.Jugadores_ganados.UseVisualStyleBackColor = true;
-            this.Jugadores_ganados.Click += new System.EventHandler(this.Jugadores_ganados_Click);
+            this.partidas_jugados.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.partidas_jugados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.partidas_jugados.Location = new System.Drawing.Point(276, 507);
+            this.partidas_jugados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.partidas_jugados.Name = "partidas_jugados";
+            this.partidas_jugados.Size = new System.Drawing.Size(231, 58);
+            this.partidas_jugados.TabIndex = 4;
+            this.partidas_jugados.Text = "Partidas jugadas por un jugador";
+            this.partidas_jugados.UseVisualStyleBackColor = false;
+            this.partidas_jugados.Click += new System.EventHandler(this.partidas_jugadas_Click);
             // 
             // invitacion
             // 
+            this.invitacion.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.invitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invitacion.Location = new System.Drawing.Point(671, 125);
+            this.invitacion.Location = new System.Drawing.Point(805, 180);
+            this.invitacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.invitacion.Name = "invitacion";
-            this.invitacion.Size = new System.Drawing.Size(110, 60);
+            this.invitacion.Size = new System.Drawing.Size(118, 48);
             this.invitacion.TabIndex = 5;
             this.invitacion.Text = "Invitar";
-            this.invitacion.UseVisualStyleBackColor = true;
+            this.invitacion.UseVisualStyleBackColor = false;
             this.invitacion.Click += new System.EventHandler(this.invitacion_Click);
             // 
             // desconectar
             // 
+            this.desconectar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.desconectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.desconectar.Location = new System.Drawing.Point(20, 658);
+            this.desconectar.Location = new System.Drawing.Point(1015, 521);
+            this.desconectar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.desconectar.Name = "desconectar";
-            this.desconectar.Size = new System.Drawing.Size(151, 38);
+            this.desconectar.Size = new System.Drawing.Size(133, 41);
             this.desconectar.TabIndex = 6;
             this.desconectar.Text = "Desconectar";
-            this.desconectar.UseVisualStyleBackColor = true;
+            this.desconectar.UseVisualStyleBackColor = false;
             this.desconectar.Click += new System.EventHandler(this.desconectar_Click);
-            // 
-            // boton_chat
-            // 
-            this.boton_chat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boton_chat.Location = new System.Drawing.Point(671, 465);
-            this.boton_chat.Name = "boton_chat";
-            this.boton_chat.Size = new System.Drawing.Size(110, 60);
-            this.boton_chat.TabIndex = 7;
-            this.boton_chat.Text = "Chat";
-            this.boton_chat.UseVisualStyleBackColor = true;
-            this.boton_chat.Click += new System.EventHandler(this.boton_chat_Click);
             // 
             // Tablaconectados
             // 
+            this.Tablaconectados.AllowUserToAddRows = false;
+            this.Tablaconectados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Tablaconectados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Tablaconectados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Tablaconectados.Location = new System.Drawing.Point(882, 26);
+            this.Tablaconectados.Location = new System.Drawing.Point(942, 46);
+            this.Tablaconectados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tablaconectados.Name = "Tablaconectados";
-            this.Tablaconectados.RowHeadersWidth = 62;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Tablaconectados.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Tablaconectados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Tablaconectados.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.Tablaconectados.RowTemplate.Height = 28;
-            this.Tablaconectados.Size = new System.Drawing.Size(378, 311);
+            this.Tablaconectados.Size = new System.Drawing.Size(205, 208);
             this.Tablaconectados.TabIndex = 8;
-            // 
-            // Chat
-            // 
-            this.Chat.FormattingEnabled = true;
-            this.Chat.ItemHeight = 20;
-            this.Chat.Location = new System.Drawing.Point(882, 358);
-            this.Chat.Name = "Chat";
-            this.Chat.Size = new System.Drawing.Size(378, 304);
-            this.Chat.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 72);
+            this.label1.Location = new System.Drawing.Point(21, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 25);
+            this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Username";
             // 
@@ -177,9 +192,9 @@ namespace SO_Proyecto
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 160);
+            this.label2.Location = new System.Drawing.Point(21, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 25);
+            this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 11;
             this.label2.Text = "Password";
             // 
@@ -187,127 +202,124 @@ namespace SO_Proyecto
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 358);
+            this.label3.Location = new System.Drawing.Point(66, 469);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
+            this.label3.Size = new System.Drawing.Size(67, 20);
             this.label3.TabIndex = 12;
             this.label3.Text = "Usuario";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(25, 432);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 25);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Fecha";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(538, 557);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 25);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Mensaje";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(520, 259);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 25);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Jugadores";
-            // 
             // username
             // 
-            this.username.Location = new System.Drawing.Point(164, 76);
+            this.username.Location = new System.Drawing.Point(147, 62);
+            this.username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(100, 26);
+            this.username.Size = new System.Drawing.Size(89, 22);
             this.username.TabIndex = 16;
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(164, 159);
+            this.password.Location = new System.Drawing.Point(147, 126);
+            this.password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(100, 26);
+            this.password.Size = new System.Drawing.Size(89, 22);
             this.password.TabIndex = 17;
+            this.password.UseSystemPasswordChar = true;
             // 
             // usuario
             // 
-            this.usuario.Location = new System.Drawing.Point(123, 358);
+            this.usuario.Location = new System.Drawing.Point(164, 467);
+            this.usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usuario.Name = "usuario";
-            this.usuario.Size = new System.Drawing.Size(100, 26);
+            this.usuario.Size = new System.Drawing.Size(89, 22);
             this.usuario.TabIndex = 18;
             // 
-            // fecha
+            // conectado
             // 
-            this.fecha.Location = new System.Drawing.Point(123, 433);
-            this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(100, 26);
-            this.fecha.TabIndex = 19;
+            this.conectado.AutoSize = true;
+            this.conectado.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conectado.Location = new System.Drawing.Point(878, 532);
+            this.conectado.Name = "conectado";
+            this.conectado.Size = new System.Drawing.Size(130, 29);
+            this.conectado.TabIndex = 26;
+            this.conectado.Text = "Conectado";
             // 
-            // chatear
+            // textBox1
             // 
-            this.chatear.Location = new System.Drawing.Point(671, 556);
-            this.chatear.Name = "chatear";
-            this.chatear.Size = new System.Drawing.Size(110, 26);
-            this.chatear.TabIndex = 20;
+            this.textBox1.Location = new System.Drawing.Point(805, 62);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(119, 22);
+            this.textBox1.TabIndex = 27;
             // 
-            // jugador2
+            // textBox2
             // 
-            this.jugador2.Location = new System.Drawing.Point(671, 213);
-            this.jugador2.Name = "jugador2";
-            this.jugador2.Size = new System.Drawing.Size(110, 26);
-            this.jugador2.TabIndex = 21;
+            this.textBox2.Location = new System.Drawing.Point(805, 98);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(119, 22);
+            this.textBox2.TabIndex = 28;
             // 
-            // jugador3
+            // textBox3
             // 
-            this.jugador3.Location = new System.Drawing.Point(671, 259);
-            this.jugador3.Name = "jugador3";
-            this.jugador3.Size = new System.Drawing.Size(110, 26);
-            this.jugador3.TabIndex = 22;
+            this.textBox3.Location = new System.Drawing.Point(805, 138);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(119, 22);
+            this.textBox3.TabIndex = 29;
             // 
-            // jugador4
+            // eliminarusuario
             // 
-            this.jugador4.Location = new System.Drawing.Point(671, 311);
-            this.jugador4.Name = "jugador4";
-            this.jugador4.Size = new System.Drawing.Size(110, 26);
-            this.jugador4.TabIndex = 23;
+            this.eliminarusuario.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.eliminarusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.eliminarusuario.Location = new System.Drawing.Point(13, 180);
+            this.eliminarusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.eliminarusuario.Name = "eliminarusuario";
+            this.eliminarusuario.Size = new System.Drawing.Size(131, 58);
+            this.eliminarusuario.TabIndex = 30;
+            this.eliminarusuario.Text = "Eliminar Usuario";
+            this.eliminarusuario.UseVisualStyleBackColor = false;
+            this.eliminarusuario.Click += new System.EventHandler(this.eliminarusuario_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(257, 128);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
+            this.checkBox1.TabIndex = 31;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1308, 719);
-            this.Controls.Add(this.jugador4);
-            this.Controls.Add(this.jugador3);
-            this.Controls.Add(this.jugador2);
-            this.Controls.Add(this.chatear);
-            this.Controls.Add(this.fecha);
+            this.BackgroundImage = global::SO_Proyecto.Properties.Resources._0db41409c10b46ae99b710427a1d7913;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1163, 574);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.eliminarusuario);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.conectado);
             this.Controls.Add(this.usuario);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Chat);
             this.Controls.Add(this.Tablaconectados);
-            this.Controls.Add(this.boton_chat);
             this.Controls.Add(this.desconectar);
             this.Controls.Add(this.invitacion);
-            this.Controls.Add(this.Jugadores_ganados);
-            this.Controls.Add(this.num_partidas);
-            this.Controls.Add(this.posicion_jugador);
+            this.Controls.Add(this.partidas_jugados);
+            this.Controls.Add(this.partidas_ganadas);
+            this.Controls.Add(this.podio);
             this.Controls.Add(this.sign_in);
             this.Controls.Add(this.log_in);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Inicio";
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.Inicio_Load);
@@ -321,28 +333,24 @@ namespace SO_Proyecto
 
         private System.Windows.Forms.Button log_in;
         private System.Windows.Forms.Button sign_in;
-        private System.Windows.Forms.Button posicion_jugador;
-        private System.Windows.Forms.Button num_partidas;
-        private System.Windows.Forms.Button Jugadores_ganados;
+        private System.Windows.Forms.Button podio;
+        private System.Windows.Forms.Button partidas_ganadas;
+        private System.Windows.Forms.Button partidas_jugados;
         private System.Windows.Forms.Button invitacion;
         private System.Windows.Forms.Button desconectar;
-        private System.Windows.Forms.Button boton_chat;
         private System.Windows.Forms.DataGridView Tablaconectados;
-        private System.Windows.Forms.ListBox Chat;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox username;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.TextBox usuario;
-        private System.Windows.Forms.TextBox fecha;
-        private System.Windows.Forms.TextBox chatear;
-        private System.Windows.Forms.TextBox jugador2;
-        private System.Windows.Forms.TextBox jugador3;
-        private System.Windows.Forms.TextBox jugador4;
+        private System.Windows.Forms.Label conectado;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button eliminarusuario;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

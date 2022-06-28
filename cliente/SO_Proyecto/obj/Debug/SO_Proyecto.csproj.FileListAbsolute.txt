@@ -20,3 +20,61 @@ C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO_Interfaz\SO_P
 C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO_Interfaz\SO_Proyecto\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.CoreCompileInputs.cache
 C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO_Interfaz\SO_Proyecto\SO_Proyecto\obj\Debug\SO_Proyecto.exe
 C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO_Interfaz\SO_Proyecto\SO_Proyecto\obj\Debug\SO_Proyecto.pdb
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.exe.config
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.exe
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.pdb
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.AssemblyReference.cache
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.SuggestedBindingRedirects.cache
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Inicio.resources
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Juego.resources
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Properties.Resources.resources
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.GenerateResource.cache
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.exe
+C:\Users\marc\Documents\Universidad\Sistemas Operativos\ProyectoSO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.pdb
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.exe.config
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.exe
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.pdb
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.AssemblyReference.cache
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.SuggestedBindingRedirects.cache
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Inicio.resources
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Juego.resources
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Properties.Resources.resources
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.GenerateResource.cache
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.CoreCompileInputs.cache
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.exe
+C:\EETAC\2n(B)\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.pdb
+D:\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.exe.config
+D:\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.exe
+D:\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.pdb
+D:\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.AssemblyReference.cache
+D:\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.SuggestedBindingRedirects.cache
+D:\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Inicio.resources
+D:\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Juego.resources
+D:\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Properties.Resources.resources
+D:\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.GenerateResource.cache
+D:\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.CoreCompileInputs.cache
+D:\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.exe
+D:\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.pdb
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.exe.config
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.exe
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.pdb
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csprojAssemblyReference.cache
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Inicio.resources
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Juego.resources
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Properties.Resources.resources
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.GenerateResource.cache
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.CoreCompileInputs.cache
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.exe
+C:\EETAC\2NB\SO\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.pdb
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.exe.config
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.exe
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\bin\Debug\SO_Proyecto.pdb
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csprojAssemblyReference.cache
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Inicio.resources
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Juego.resources
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.Properties.Resources.resources
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.GenerateResource.cache
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.csproj.CoreCompileInputs.cache
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.exe
+C:\EETAC\2NB\SO\Proyecto\cliente\SO_Proyecto\obj\Debug\SO_Proyecto.pdb

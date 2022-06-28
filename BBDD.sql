@@ -31,23 +31,6 @@ CREATE TABLE Participacion (
 
 )ENGINE=InnoDB;
 				
-INSERT INTO Jugadores VALUES ('Pedro', 1, 'pedro1234');
-INSERT INTO Jugadores VALUES ('Juan', 2, 'juan1234');
-INSERT INTO Jugadores VALUES ('Marta', 3, 'marta1234');
-INSERT INTO Jugadores VALUES ('Maria', 4, 'maria1234');
-
-
-INSERT INTO Partidas VALUES ('Lunes','Pedro',1);
-INSERT INTO Partidas VALUES ('Martes','Maria',2);
-INSERT INTO Partidas VALUES ('Sabado','Marta',3);
-INSERT INTO Partidas VALUES ('Domingo','Juan',4);
-
-INSERT INTO Participacion VALUES (1,1,1,1000);
-INSERT INTO Participacion VALUES (2,3,3,200);
-INSERT INTO Participacion VALUES (3,2,2,500);
-INSERT INTO Participacion VALUES  (4,2,1,700);
-
-
 
 
 

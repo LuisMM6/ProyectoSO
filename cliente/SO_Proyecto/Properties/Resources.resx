@@ -118,10 +118,97 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Monopoly" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Monopoly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pobre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pobre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ficha2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ficha25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TiroDado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiroDado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ficha1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ficha15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>dado3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>dado4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0db41409c10b46ae99b710427a1d7913" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0db41409c10b46ae99b710427a1d7913.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dinerosuelo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinerosuelo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>dado5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pipa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pipa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TiroDado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiroDado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eetac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eetac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ficha_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ficha_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MonopolyBueno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonopolyBueno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tirardado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tirardado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-Euro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-Euro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ficha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ficha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monopoly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monopoly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>dado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ficha3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ficha31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="morad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\morad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ficha4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ficha41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>dado6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mostrarcontra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mostrarcontra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dado2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>dado2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TirarDado2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TirarDado2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="florida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\florida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="podio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\podio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
