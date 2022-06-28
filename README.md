@@ -25,3 +25,5 @@ URL: https://youtu.be/FIXN8_gxxAQ
 
 Versión Final generada por Marc
 Versión Final verificada por Daniel
+Versión Final verificada por Daniel/Marc
+URL video: https://youtu.be/0yB7RkAluv0
